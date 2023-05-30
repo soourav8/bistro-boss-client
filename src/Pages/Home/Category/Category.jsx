@@ -4,12 +4,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/free-mode";
+
 import "swiper/css/pagination";
 
 
 // import required modules
-import { FreeMode, Pagination } from "swiper";
+import {  Pagination } from "swiper";
 
 // import slide images
 import img1 from '../../../assets/home/slide1.jpg'
@@ -24,22 +24,38 @@ const Category = () =>{
 
 
     return (
-        <div>
+        <div className="mb-12">
         <Swiper
         slidesPerView={3}
         spaceBetween={30}
-        freeMode={true}
+        
         pagination={{
           clickable: true,
         }}
-        modules={[FreeMode, Pagination]}
+        modules={[ Pagination]}
         className="mySwiper"
         >
-        <SwiperSlide><img src={img2} alt="" /></SwiperSlide>
-        <SwiperSlide><img src={img1} alt="" /></SwiperSlide>
-        <SwiperSlide><img src={img3} alt="" /></SwiperSlide>
-        <SwiperSlide><img src={img4} alt="" /></SwiperSlide>
-        <SwiperSlide><img src={img5} alt="" /></SwiperSlide>
+        <SwiperSlide className=" text-center pb-12">
+          <img className="w-full" src={img2} alt="" />
+          <p className="uppercase md:text-4xl -mt-12   text-white " >pizzas</p>
+          </SwiperSlide>
+        <SwiperSlide className="text-center" >
+          <img className="w-full" src={img1} alt="" />
+          <p className="uppercase md:text-4xl -mt-12  text-white " >salads</p>
+          </SwiperSlide>
+        <SwiperSlide className=" text-center">
+          <img className="w-full" src={img3} alt="" />
+          <p className="uppercase md:text-4xl -mt-12  text-white " >soups</p>
+          </SwiperSlide>
+        <SwiperSlide className="text-center" >
+          <img className="w-full" src={img4} alt="" />
+          <p className="uppercase md:text-4xl -mt-12  text-white " >desserts</p>
+          </SwiperSlide>
+        <SwiperSlide className="text-center" >
+          <img className="w-full" src={img5} alt="" />
+          <p className="uppercase md:text-4xl -mt-12  text-white " >salads</p>
+          </SwiperSlide>
+        
         
         
         
