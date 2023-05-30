@@ -18,7 +18,7 @@ const Banner = () =>{
 
 
     return (
-        <div className='text-center'>
+        <div className='text-center mb-20'>
 
             <Carousel>
                 <div>
