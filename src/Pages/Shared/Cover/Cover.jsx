@@ -3,7 +3,7 @@ import { Parallax, Background } from "react-parallax";
 
 const Cover = ({ img, title }) => {
   return (
-    <div>
+    <div className="mb-16">
       <Parallax
         blur={{ min: -15, max: 15 }}
         bgImage={img}
