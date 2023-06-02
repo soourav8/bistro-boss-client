@@ -1,5 +1,6 @@
 import React from "react";
 
+
 export const FoodCard = ({item}) => {
     const { name, image, price, recipe } = item;
   return (
