@@ -7,7 +7,8 @@ import Home from "../Pages/Home/Home/Home";
 import Menu from "../Pages/Menu/Menu/Menu";
 import { Order } from "../Pages/Order/Order/Order";
 import { Login } from "../Pages/Login/Login";
-import { SignUp } from "../SignUp/SignUp";
+import { SignUp } from "../Pages/SignUp/SignUp";
+
 
   export const router = createBrowserRouter([
     {
