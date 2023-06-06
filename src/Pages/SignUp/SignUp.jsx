@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import { AuthContext } from "../../providers/AuthProvider";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
+import { SocialLogin } from "../../Components/SocialLogin/SocialLogin";
 
 export const SignUp = (props) => {
   const {
@@ -175,6 +176,7 @@ export const SignUp = (props) => {
                   value="Sign Up"
                 />
               </div>
+              <SocialLogin></SocialLogin>
             </div>
           </div>
         </div>

@@ -12,6 +12,8 @@ import { useCart } from "../hooks/useCart";
 
 export const Dashboard = () => {
     const [cart] = useCart();
+    //TODO: load  data from the server to have dynamic isAdmin based on data
+    const isAdmin = true;
   return (
     <>
      <Helmet>
